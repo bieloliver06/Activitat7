@@ -61,8 +61,16 @@ namespace Apartat3
                             Console.WriteLine("El que has introduit no és valid.");
                         }
                     }
-                    dict.Add(word, definition);
-                    Console.WriteLine($"{word} : {definition}");
+
+                    try
+                    {
+                        dict.Add(word, definition);
+                        Console.WriteLine($"{word} : {definition}");
+                    }
+                    catch (System.ArgumentException)
+                    {
+                        Console.WriteLine("La paraula ja estava afagida...");
+                    }
                 }
                 else if (i_input == 2)
                 {
@@ -83,7 +91,7 @@ namespace Apartat3
                     }
                     Console.WriteLine($"{word} : {dict[word]}");
                 }
-                else
+                else if (i_input == 3)
                 {
                     break;
                 }
