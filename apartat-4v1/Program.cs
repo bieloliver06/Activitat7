@@ -6,7 +6,7 @@
         {
             string? input;
             var words = new List<string>();
-
+            
             Console.WriteLine("Introdueix la primera paraula : ");
             input = Console.ReadLine();
             if (input != null) words.Add(input);
