@@ -17,7 +17,7 @@
 
             words.Sort();
 
-            for (int i = 0; i < words.Length; i++)
+            for (int i = 0; i < words.Count; i++)
             {
                 Console.WriteLine($"{i + 1}. {words[i]}");
             }
