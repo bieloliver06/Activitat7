@@ -1,17 +1,16 @@
-﻿namespace Apartat1
+﻿namespace apartat_1
 {
     class Program
     {
         static void Main()
         {
-            string? input;
             while (true)
             {
                 Console.WriteLine("Introdueix la paraula que desitges veures si es un palíndrom : ");
-                input = Console.ReadLine();
+                string? input = Console.ReadLine();
                 if (input != null)
                 {
-                    bool isPalindrome = getPalindrome(input);
+                    bool isPalindrome = GetPalindrome(input);
                     if (isPalindrome == true)
                     {
                         Console.WriteLine($"{input} és un palíndrom.");
@@ -26,7 +25,7 @@
 
             }
         }
-        public static bool getPalindrome(string inputString)
+        public static bool GetPalindrome(string inputString)
         {
             string first = inputString.Substring(0, inputString.Length / 2);
             char[] arr = inputString.ToCharArray();

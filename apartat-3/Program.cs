@@ -89,7 +89,14 @@ namespace Apartat3
                             Console.WriteLine("El que has introduit no és valid.");
                         }
                     }
-                    Console.WriteLine($"{word} : {dict[word]}");
+                    try
+                    {
+                        Console.WriteLine($"{word} : {dict[word]}");
+                    } catch (System.Collections.Generic.KeyNotFoundException)
+                    {
+                        Console.WriteLine($"{word} no es present en el diccionari");
+                    }
+
                 }
                 else if (i_input == 3)
                 {

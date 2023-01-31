@@ -1,4 +1,4 @@
-﻿namespace Apartat2
+﻿namespace apartat_2
 {
     class Program
     {
