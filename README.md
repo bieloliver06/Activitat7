@@ -21,7 +21,8 @@ Llegeix definició: Demana la paraula i la cerca. Si la troba mostra la definici
 
 Sortir: Atura l’execució del programa.
 
-	CONSIDERACIONS
+### CONSIDERACIONS
+
 Emprar un bucle pel menú. Després d’executar cada acció ha de tornar a mostrar el menú fins que l’usuari indica l’opció de sortir.
 Suposem que com a màxim tenim 100 definicions.
 FES un dibuix de la teva solució. T’ajudarà.

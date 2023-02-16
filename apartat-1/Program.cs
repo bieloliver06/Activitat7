@@ -11,12 +11,12 @@
                 if (input != null)
                 {
                     bool isPalindrome = GetPalindrome(input);
-                    if (isPalindrome == true)
+                    if (isPalindrome)
                     {
                         Console.WriteLine($"{input} és un palíndrom.");
                         break;
                     }
-                    else
+                    elsesw
                     {
                         Console.WriteLine($"{input} no és un palíndrom.");
                         break;
