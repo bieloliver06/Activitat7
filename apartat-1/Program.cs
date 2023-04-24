@@ -16,13 +16,12 @@
                         Console.WriteLine($"{input} és un palíndrom.");
                         break;
                     }
-                    elsesw
+                    else
                     {
                         Console.WriteLine($"{input} no és un palíndrom.");
                         break;
                     }
                 }
-
             }
         }
         public static bool GetPalindrome(string inputString)
